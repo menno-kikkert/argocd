@@ -8,7 +8,7 @@ metadata:
 spec:
   limits:
   - default:
-      cpu: 200m
+      cpu: 400m
       memory: 512Mi
     defaultRequest:
       cpu: 100m
