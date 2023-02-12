@@ -13,7 +13,7 @@ quota:
   resourcequotas: "1"
   services: "5"
 
-  #specifies the limit ranges for the chart
+#specifies the limit ranges for the chart
 limits:
   default:
     cpu: 200m
@@ -22,3 +22,15 @@ limits:
     cpu: 100m
     memory: 256Mi
   type: Container
+
+#specifies the rbac
+rbac:
+- developer
+  groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf7"
+- reader
+  groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf8"
+- admin
+  groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf9"
+
+  
+  
