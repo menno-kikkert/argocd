@@ -1,5 +1,5 @@
-{{- range .Values.rbac }}
-{{if eq .role "developer" }}
+{{- range $rbac := .Values.rbac }}
+{{if eq $rbac.role "developer" }}
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
