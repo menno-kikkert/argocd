@@ -25,11 +25,11 @@ limits:
 
 #specifies the rbac
 rbac:
-- developer
+- role: developer
   groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf7"
-- reader
+- role: reader
   groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf8"
-- admin
+- role: admin
   groupObjectId: "e6dcdae4-e9ff-4261-81e6-0d08537c4cf9"
 
   
