@@ -1,4 +1,5 @@
-{{if has "developer" .Values.rbac.role }}
+{{- range .Values.rbac }}
+{{if eq .role "developer" }}
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -16,3 +17,4 @@ rules:
   - cronjobs
   verbs: ["*"]
 {{ end }}
+{{- end }}
